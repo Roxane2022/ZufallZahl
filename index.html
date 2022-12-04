@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="external2/bootstrap.css">
+    <!--<link rel="stylesheet" href="external2/bootstrap.css.map">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Zufallspiel</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body bgcolor="#FFFFE0" text="#000000">
+
+
+    <div class="container-xl text-center">
+        <div class="row">
+            <div class="col-5 lefside">
+
+
+
+
+                <div id="resultat">
+
+
+
+                </div>
+
+
+            </div>
+            <div class="col-7 middle">
+
+                <div>
+                    <h1>Drei Mal Darfst du raten, welche Zahl sich hier verbergt </h1>
+                </div>
+
+                <table class="table" border="5" cellpadding="30" cellspacing="10">
+
+                    <tr>
+                        <td bgcolor="#C0C0C0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#E0E0E0">
+                            <div id="middle" class="col-6 lefside">
+                                <form action="action">
+                                    <label for="meineZahl">gib eine Zahl zwischen 0 und 100 ein und drückt auf "Start"</label><br><br>
+                                    <input type="number" id="meineZahl" name="meineZahl" min="0" max="99"><br><br>
+
+                                    <input type="button" value="Start" onclick="start()">
+
+                                    <button type="reset" value="reset" class="btnreset" onclick="reset();">Reset</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--</form>-->
+
+            </div>
+
+        </div>
+    </div>
+    <div id="linkeSeitContentArea" class="col-5 lefside">
+
+
+
+
+        <div>
+
+
+
+        </div>
+
+
+    </div>
+    <script src="zufallZahl.js"></script>
+
+</body>
+
+</html>
